@@ -6,10 +6,17 @@ ja:
       task:
         title: タイトル
         content: 内容
+      user:
+        name: 名前
+        email: メールアドレス
+        password: パスワード
   errors:
     format: "%{attribute}%{message}"
     messages:
       blank: を入力してください
+      invalid: が正しくありません。
+      blank: を入力してください。
+      too_short: は%{count}文字以上で入力してください。
   helpers:
     submit:
       create: 登録する
