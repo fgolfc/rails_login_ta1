@@ -10,6 +10,9 @@ ja:
         name: 名前
         email: メールアドレス
         password: パスワード
+  flash:
+    blogs:
+      create: ブログを投稿しました
   errors:
     format: "%{attribute}%{message}"
     messages:
@@ -17,6 +20,8 @@ ja:
       invalid: が正しくありません。
       blank: を入力してください。
       too_short: は%{count}文字以上で入力してください。
+      invalid_email: そのメールアドレスは使用できません
+      pssword_mismatch: パスワード（確認）とパスワードの入力が一致しません
   helpers:
     submit:
       create: 登録する
