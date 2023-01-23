@@ -10,9 +10,6 @@ ja:
         name: 名前
         email: メールアドレス
         password: パスワード
-  flash:
-    blogs:
-      create: ブログを投稿しました
   errors:
     format: "%{attribute}%{message}"
     messages:
@@ -48,3 +45,17 @@ ja:
       updated: タスクを更新しました
     destroy:
       destroyed: タスクを削除しました
+
+  users:
+    new:
+      title: アカウント登録ページ
+    edit:
+      title: アカウント編集ページ
+    show:
+      title: アカウント詳細ページ
+    create:
+      created: アカウントを登録しました
+    update:
+      updated: アカウントを更新しました
+    destroy:
+      destroyed: アカウントを削除しました
