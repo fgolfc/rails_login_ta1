@@ -2,14 +2,18 @@ ja:
   activerecord:
     models:
       task: タスク
+      user: ユーザー
     attributes:
       task:
         title: タイトル
         content: 内容
       user:
+        title: タイトル
+        content: 内容
         name: 名前
         email: メールアドレス
         password: パスワード
+        password_confirmation: パスワード（確認）
   errors:
     format: "%{attribute}%{message}"
     messages:
@@ -45,7 +49,6 @@ ja:
       updated: タスクを更新しました
     destroy:
       destroyed: タスクを削除しました
-
   users:
     new:
       title: アカウント登録ページ
