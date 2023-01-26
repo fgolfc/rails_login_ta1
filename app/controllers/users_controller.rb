@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in(@user)
-      redirect_to user_path(@user.id)
+      redirect_to user_path(@user.id), notice: t('.created')
     else
       render :new
     end
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      redirect_to request.referer
+      redirect_to request.referer, notice: t('.updated')
     else
       render :new
     end
@@ -33,7 +33,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    redirect_to request.referer
+    redirect_to request.referer, notice: t('.destroyed')
   end
 
   private

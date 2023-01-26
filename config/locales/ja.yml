@@ -4,12 +4,15 @@ ja:
       task: タスク
       user: ユーザー
     attributes:
+      session:
+        name: 名前
+        email: メールアドレス
+        password: パスワード
+        create-session: ログイン
       task:
         title: タイトル
         content: 内容
       user:
-        title: タイトル
-        content: 内容
         name: 名前
         email: メールアドレス
         password: パスワード
@@ -27,11 +30,18 @@ ja:
     submit:
       create: 登録する
       update: 更新する
+      create-session: ログイン
+  notice:
+    created: タスクを登録しました
+    updated: タスクを更新しました
+    destroyed: タスクを削除しました
   common:
     new: 新規作成
     show: 詳細
     edit: 編集
+    edit-user: 編集
     destroy: 削除
+    destroy-user: 削除
     back: 戻る
     confirm_destroy: 本当に削除してもよろしいですか？
   tasks:
