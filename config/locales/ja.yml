@@ -8,7 +8,7 @@ ja:
         name: 名前
         email: メールアドレス
         password: パスワード
-        create-session: ログイン
+        submit: ログイン
       task:
         title: タイトル
         content: 内容
@@ -30,7 +30,6 @@ ja:
     submit:
       create: 登録する
       update: 更新する
-      create-session: ログイン
   notice:
     created: タスクを登録しました
     updated: タスクを更新しました
