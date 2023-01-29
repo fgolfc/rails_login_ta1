@@ -4,8 +4,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.string :title
       t.text :content
 
-      t.timestamps
-      add_index :tasks, [:name, :account_id], unique: true
+      t.timestamps    
     end
   end
 end
