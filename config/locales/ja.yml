@@ -23,7 +23,7 @@ ja:
       invalid: が正しくありません。
       blank: を入力してください。
       too_short: は%{count}文字以上で入力してください。
-      invalid_email: そのメールアドレスは使用できません
+      taken: はすでに使用されています
       pssword_mismatch: パスワード（確認）とパスワードの入力が一致しません
   helpers:
     submit:

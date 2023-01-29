@@ -1,5 +1,5 @@
 class AddIndexToTasksNameAndAccountId < ActiveRecord::Migration[6.0]
   def change
-    add_index :tasks, [:title, :id], unique: true
+    add_index :tasks, [:title, :user_id], unique: true
   end
 end
