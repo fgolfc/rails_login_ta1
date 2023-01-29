@@ -4,11 +4,10 @@ ja:
       task: タスク
       user: ユーザー
     attributes:
-      session:
+      forms/session:
         name: 名前
         email: メールアドレス
         password: パスワード
-        submit: ログイン
       task:
         title: タイトル
         content: 内容
