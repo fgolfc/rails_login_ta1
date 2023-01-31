@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
   before_action :login_required
-  before_action :flash_alert, unless: :user_signed_in?
 
   private
 
@@ -13,9 +12,5 @@ class ApplicationController < ActionController::Base
     unless logged_in?
       redirect_to login_url
     end
-  end
-
-  def flash_alert
-    flash[:alert] = "ログインしてください" unless user_signed_in?
   end
 end
