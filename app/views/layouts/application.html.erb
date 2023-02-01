@@ -17,13 +17,8 @@
     <% if logged_in? %>
       <%= link_to "タスク一覧", tasks_path, id: "tasks-index" %>
       <%= link_to "タスクを登録する", new_task_path, id: "new-task" %>
-      <%= link_to "タスクを編集する", edit_task_path(task) %>
-      <%= link_to "タスクを削除する", task_path(task), method: :delete, data: { confirm: 'Are you sure?' } %>
       <%= link_to "アカウント", user_path(current_user.id), id: "my-account" %>
-      <%= link_to "New User", new_user_path %>
-      <%= link_to "Edit User", edit_user_path(user) %>
-      <%= link_to "Delete User", user_path(user), method: :delete, data: { confirm: 'Are you sure?' } %>
-      <%= link_to "ログアウト", session_path(current_user.id), confirm: 'Are you sure?', method: :delete, id: "sign-out" %>
+     <%= link_to "ログアウト", session_path(current_user.id), confirm: 'Are you sure?', method: :delete, id: "sign-out" %>
     <% else %>
       <%= link_to "アカウント登録", new_user_path, id: "sign-up" %>
       <%= link_to "ログイン", new_session_path, id: "sign-in" %>
