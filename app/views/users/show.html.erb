@@ -8,5 +8,5 @@
   <%= @user.email %>
 </p>
 
-<%= link_to t('common.edit'), edit_user_path, id: 'edit-user' %> |
+<%= link_to t('common.edit'), edit_user_path(id: user.id), id: 'edit-user' %> |
 <%= link_to t('common.destroy'), user_path(@user), confirm: 'Are you sure?', method: :delete, id: 'destroy-user' %>
