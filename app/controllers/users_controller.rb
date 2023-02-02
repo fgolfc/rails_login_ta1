@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(params[:id])
     if @user.save
-      redirect_to new_session_path
+      redirect_to edit_user_path(@user)
     else
       render :new
     end
