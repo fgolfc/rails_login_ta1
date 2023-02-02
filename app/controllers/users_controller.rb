@@ -19,6 +19,11 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    if @user.save
+      redirect_to new_session_path
+    else
+      render :new
+    end
   end
 
   def update
@@ -33,7 +38,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    redirect_to request.referer, notice: t('.destroyed')
+    redirect_to new_session_path, notice: t('.destroyed')
   end
 
   private

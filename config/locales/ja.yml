@@ -39,7 +39,7 @@ ja:
     edit: 編集
     edit-user: 編集
     destroy: 削除
-    destroy-user: 削除
+    destroy-user: 本当に削除してもよろしいですか？
     back: 戻る
     confirm_destroy: 本当に削除してもよろしいですか？
   sessions:
