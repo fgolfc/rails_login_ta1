@@ -44,6 +44,21 @@ class TasksController < ApplicationController
       @task = Task.find(params[:id])
     end
 
+    def require_login
+      unless logged_in?
+        flash[:error] = "ログインしてください"
+        redirect_to login_path
+      end
+    end
+
+    def logged_in?
+      !!current_user
+    end
+
+    def current_user
+      @current_user ||= User.find_by(id: session[:user_id])
+    end
+
     def task_params
       params.require(:task).permit(:title, :content)
     end
