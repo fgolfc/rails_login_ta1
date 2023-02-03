@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :already_login?, only: [:new, :create]
-  before_action :login?, only: :show
+  before_action :correct_user, only: [:show]
+  skip_before_action :login_required, only: [:new, :create]
   def new
     @user = User.new
   end
