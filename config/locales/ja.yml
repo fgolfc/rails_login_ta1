@@ -19,12 +19,13 @@ ja:
   errors:
     format: "%{attribute}%{message}"
     messages:
-      blank: を入力してください
       invalid: が正しくありません。
       blank: を入力してください。
       too_short: は%{count}文字以上で入力してください。
-      taken: はすでに使用されています
-      pssword_mismatch: パスワード（確認）とパスワードの入力が一致しません
+      taken: はすでに使用されています。
+      pssword_mismatch: パスワード（確認）とパスワードの入力が一致しません。
+      destroy-user: 本当に削除してもよろしいですか？
+      confirm_destroy: 本当に削除してもよろしいですか？
   helpers:
     submit:
       create: 登録する
@@ -39,9 +40,7 @@ ja:
     edit: 編集
     edit-user: 編集
     destroy: 削除
-    destroy-user: 本当に削除してもよろしいですか？
     back: 戻る
-    confirm_destroy: 本当に削除してもよろしいですか？
   sessions:
     new:
       title: ログインページ
